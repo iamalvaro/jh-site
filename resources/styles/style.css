@@ -44,15 +44,14 @@ h1 {
     justify-content: space-between;
     align-items: center;    
     height: 6rem;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .nav-logo > p {
     color: var(--accentColour);
     font-family: "Gajraj One", sans-serif;  
-    font-size: 2rem;
-    font-weight: 100;
+    font-size: 1.8rem;
     user-select: none;
-
 }
 #navbar > button {
     background-color: var(--grey);
@@ -76,8 +75,7 @@ h1 {
 main {
     display:flex;
     width: 80%;
-    margin: 3rem auto;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    margin: 3rem auto; 
 }
 main  h1 {
     width: 70%;
