@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
 :root {
    --brokenWhite: #EEEEEE;
   --grey:  #393E46;
@@ -33,10 +35,19 @@ h1 {
   }
   
   h3{
-    font-size: 1.5em;    
+    font-size: 1.4em;    
+  }
+  i {
+    font-size: 1.7rem;
+    margin: 0 0.5rem 0 0;
+    /* color: var(--accentColour); */
+    /* margin: 0 0 0.8rem 0; */
+  }
+  p {
+    font-size:1.2rem;
   }
 
-/* NAV BAR */
+/*------------ NAV BAR ----------*/
 #navbar {
     background-color: var(--grey);
     color: var(--brokenWhite);
@@ -47,11 +58,21 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.nav-logo > p {
+.nav-logo > p:first-of-type {
     color: var(--accentColour);
     font-family: "Gajraj One", sans-serif;  
     font-size: 1.8rem;
     user-select: none;
+}
+.nav-logo > p:last-of-type {
+    color: var(--accentColour);
+    font-family: 'Gruppo', sans-serif;
+    font-size: 1.2rem;
+    margin: -0.5rem 0;
+    letter-spacing: 9.2px;
+    user-select: none;
+
+
 }
 #navbar > button {
     background-color: var(--grey);
@@ -61,10 +82,15 @@ h1 {
     border-radius: 0.5rem;
     cursor: pointer;
 }
+#navbar > button:hover {
+    color: var(--brokenWhite);
+    border: 2px solid var(--brokenWhite);
+}
 .nav-links  {    
     list-style-type: none;
     display: flex;
-    gap: 1rem;  
+    align-items: center;
+    gap: 2rem;  
       
 }
 .nav-links li a {
@@ -74,58 +100,148 @@ h1 {
 /* -----------------MAIN----------- */
 main {
     display:flex;
-    width: 80%;
+    width: 85vw;
     margin: 3rem auto; 
+    /* justify-content: space-around; */
 }
 main  h1 {
-    width: 70%;
-    margin: 0 0 2rem 0;
+    width: 95%;
+    margin: 0 0 1rem 0;
 }
 main h1 + button {
     background-color: var(--accentColour);
     color: var(--brokenWhite);
     border: none;
     padding: 1rem;
+    font-size: 1.2rem;
     border-radius: 0.5rem;
+    cursor: pointer;
     }
+    main h1 + button:hover {
+        color: var(--grey);
+    }
+/* main h1 + button:hover {
+    color: var(--accentColour);
+    background-color: var(--brokenWhite);
+    border: solid 2px var(--accentColour);
+} */
 .hero-img {
-        background-color: var(--accentColour);
-        width: 60rem;
-        height: 30rem;
+    width: 20rem;
+    height: 31rem;
 }
 .hero-subcontainer {
     display:flex;
-    margin: 3rem 0;
+    margin: 1.5rem 0 0;
     justify-content: space-evenly;
-    width: 70%;
-    gap: 4rem;
+    width: 80%;
+    gap: 1rem;
 }
 .hero-sub{
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+}
+.hero-sub h3 {
+    margin: 0 0 1rem 0;
+    display: inline;
+}
+.hero-sub p  {
+    margin: 1rem 0 0 0;
 }
 .hero-sub:first-of-type {
     /* background-color: red; */
 }
+
+/* -------------IMAGE COMPARE------------- */
+.img-comp-container {
+    position: relative;
+    height: 28rem; /*should be the same height as the images*/
+   width: 20rem;
+   border-radius: 0.5rem;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
+   
+   }        
+   .img-comp-img {
+   position: absolute;        
+   overflow: hidden;
+   border-radius: 0.5rem; 
+   
+   }       
+   .img-comp-overlay {
+   object-position: left 60% top 20%;
+
+   } 
+   .img-comp-img img {
+   display: block;
+   vertical-align: middle;
+   object-fit: cover;            
+   height: 28rem;
+   width: 20rem;
+   }            
+   .img-comp-slider {
+   position: absolute;
+   z-index: 9;
+   cursor: ew-resize;
+   /*set the appearance of the slider:*/
+   width: 40px;
+   height: 40px;
+   background-color: var(--accentColour);
+   opacity: 0.7;
+   border-radius: 50%;
+   }     
+   /* .worker-container {
+    background-color: var(--accentColour);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+    bottom: -2rem;
+    left: -3rem;
+    background-image: url(/resources/images/house.png);
+    background-size: 6rem;
+    object-fit: cover;
+   } */
+   .worker-img {
+    width: 8rem;
+    position: absolute;
+    bottom: -2rem;
+    left: -3rem;
+   }
 /* ------------CARDS------------- */
+#services {
+    margin: 3em auto; 
+    padding: 2rem 0 2rem 0;  
+    /* width: 85vw; */
+    background-color: var(--accentColour);
+    /* height: 90vh; */
+}
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 2em;
-    margin: 3em auto;   
-    width: 85vw;
-   
+    gap: 2em; 
+    width: 85vw; 
+}
+.services-subheading {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+    color: var(--brokenWhite);
+    letter-spacing: 5px;
+
+
 }
 .card-container > * {
     flex: 1;
     padding: 2rem 1rem 1rem;
-    border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.5rem;   
     margin: 0 auto;
     
 }
 .card {
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--brokenWhite);
+    
 }
 .card > * {
     margin: 0.5rem 0; 
@@ -133,9 +249,8 @@ main h1 + button {
 .card > img {
     width: 6rem;
     align-self: center;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
-
 /* SLIDE SHOW */
 .container {
     height: 20rem;
