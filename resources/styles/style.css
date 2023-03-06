@@ -8,6 +8,7 @@
    --brokenWhite: #EEEEEE;
   --grey:  #393E46;
   --accentColour: #00ADB5;
+  --containerWidth: 70vw;
 }
 
 html{
@@ -100,12 +101,19 @@ h1 {
 /* -----------------MAIN----------- */
 main {
     display:flex;
-    width: 85vw;
+    width: var(--containerWidth);
     margin: 3rem auto; 
     /* justify-content: space-around; */
+    /* position: relative; */
+}
+.hero-container {
+    width: 50%;
+    /* position: absolute; */
+    /* left: 0; */
+    margin: 0;
 }
 main  h1 {
-    width: 95%;
+    width: 70%;
     margin: 0 0 1rem 0;
 }
 main h1 + button {
@@ -117,9 +125,9 @@ main h1 + button {
     border-radius: 0.5rem;
     cursor: pointer;
     }
-    main h1 + button:hover {
-        color: var(--grey);
-    }
+main h1 + button:hover {
+    color: var(--grey);
+}
 /* main h1 + button:hover {
     color: var(--accentColour);
     background-color: var(--brokenWhite);
@@ -151,10 +159,14 @@ main h1 + button {
 }
 
 /* -------------IMAGE COMPARE------------- */
+.hero-img {
+    margin: 0;
+    
+}
 .img-comp-container {
-    position: relative;
-    height: 28rem; /*should be the same height as the images*/
-   width: 20rem;
+   position: relative;
+   height: 28rem; /*should be the same height as the images*/
+   width: 30vw;
    border-radius: 0.5rem;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
    
@@ -171,10 +183,10 @@ main h1 + button {
    } 
    .img-comp-img img {
    display: block;
-   vertical-align: middle;
+   /* vertical-align: middle; */
    object-fit: cover;            
    height: 28rem;
-   width: 20rem;
+   width: 30vw;
    }            
    .img-comp-slider {
    position: absolute;
@@ -206,6 +218,17 @@ main h1 + button {
     bottom: -2rem;
     left: -3rem;
    }
+   .tag-img {
+    width: 30vw;
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--grey);
+
+    /* text-shadow: 2px 2px var(--grey); */
+    /* position: absolute;
+    bottom: 1rem;
+    left: 1rem; */
+   }
 /* ------------CARDS------------- */
 #services {
     margin: 3em auto; 
@@ -218,7 +241,7 @@ main h1 + button {
     display: flex;
     justify-content: center;
     gap: 2em; 
-    width: 85vw; 
+    width: var(--containerWidth); 
 }
 .services-subheading {
     display: flex;
@@ -255,7 +278,7 @@ main h1 + button {
 .container {
     height: 20rem;
     background-color: var(--grey);
-    width: 85vw;
+    width: var(--containerWidth);
     margin: 3rem auto;
 }
 .container:last-of-type {
