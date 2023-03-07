@@ -50,11 +50,27 @@ h1 {
 
   @media (max-width: 766px) {
     :root {
-      --containerWidth: 95vw;
+      --containerWidth: 90vw;
      }
-     
 
+     .nav-links, #navbar > button {
+        display: none !important;
+     }
 
+    main {
+        flex-direction: column;
+    }
+    .hero-container {
+        width: 100%;
+    }
+    .gallery-container {
+        --containerWidth: 100vw;
+        
+    }
+    .card-container {        
+        flex-direction: column;
+       
+    }
   }  
 
 /*------------ NAV BAR ----------*/
@@ -172,8 +188,7 @@ main h1 + button:hover {
    height: 28rem; /*should be the same height as the images*/
    width: 30vw;
    border-radius: 0.5rem;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
-   
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;   
    }        
    .img-comp-img {
    position: absolute;        
@@ -261,9 +276,7 @@ main h1 + button:hover {
     margin: 0 auto;    
 }
 /* SLIDE SHOW */
-.container {
-    /* height: 20rem; */
-    /* background-color: var(--grey); */
+.gallery-container { 
     width: var(--containerWidth);
     margin: 3rem auto;
 }
@@ -402,5 +415,6 @@ footer {
 }
 #copyright {
     font-weight: 200;
+    font-size: 1rem;
 }
 
