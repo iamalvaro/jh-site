@@ -47,32 +47,6 @@ h1 {
   p {
     font-size:1.2rem;
   }
-
-  @media (max-width: 766px) {
-    :root {
-      --containerWidth: 90vw;
-     }
-
-     .nav-links, #navbar > button {
-        display: none !important;
-     }
-
-    main {
-        flex-direction: column;
-    }
-    .hero-container {
-        width: 100%;
-    }
-    .gallery-container {
-        --containerWidth: 100vw;
-        
-    }
-    .card-container {        
-        flex-direction: column;
-       
-    }
-  }  
-
 /*------------ NAV BAR ----------*/
 #navbar {
     background-color: var(--grey);
@@ -128,13 +102,9 @@ main {
     display:flex;
     width: var(--containerWidth);
     margin: 3rem auto; 
-    /* justify-content: space-around; */
-    /* position: relative; */
 }
 .hero-container {
     width: 50%;
-    /* position: absolute; */
-    /* left: 0; */
     margin: 0;
 }
 main  h1 {
@@ -161,7 +131,7 @@ main h1 + button:hover {
     display:flex;
     margin: 1.5rem 0 0;
     justify-content: space-evenly;
-    width: 90%;
+    width: 70%;
     
 }
 .hero-sub{
@@ -233,10 +203,8 @@ main h1 + button:hover {
 /* ------------CARDS------------- */
 #services {
     margin: 3em auto; 
-    padding: 2rem 0 3rem 0;  
-    /* width: 85vw; */
-    background-color: var(--accentColour);
-    /* height: 90vh; */
+    padding: 2rem 0 3rem 0;    
+    background-color: var(--accentColour);    
 }
 .card-container {
     display: flex;
@@ -276,13 +244,11 @@ main h1 + button:hover {
     margin: 0 auto;    
 }
 /* SLIDE SHOW */
-.gallery-container { 
+.container { 
     width: var(--containerWidth);
     margin: 3rem auto;
 }
 .gallery-container {
-    /* width: 70vw;
-    margin: 3rem auto; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -418,3 +384,40 @@ footer {
     font-size: 1rem;
 }
 
+@media (max-width: 766px) {
+    :root {
+      --containerWidth: 90vw;
+     }
+
+     .nav-links, #navbar > button {
+        display: none !important;
+     }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    main h1 {
+        width: 100%;
+    }
+    .hero-container {
+        width: 100%;
+    }
+    .gallery-container {
+        --containerWidth: 100vw;        
+    }
+    .img-comp-container {
+        width: 80vw;
+    }
+    .img-comp-img img {
+        width: 80vw;
+    }
+    .card-container {        
+        flex-direction: column;       
+    }
+  }  
+  /* @media (min-width: 766px) {
+    .hero-container {
+        width: 50%;
+    }
+  } */
