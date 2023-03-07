@@ -147,6 +147,11 @@ main h1 + button:hover {
 .hero-sub:first-of-type {
     /* background-color: red; */
 }
+.main-img {
+    width: 40rem;
+    position: absolute;
+    margin: -2rem 0 0 -10rem;
+}
 
 /* -------------IMAGE COMPARE------------- */
 .hero-img {
@@ -400,8 +405,16 @@ footer {
     main h1 {
         width: 100%;
     }
+    .main-img {
+        width: 25rem;
+        margin: 1rem 0 0 -5rem;
+    }
     .hero-container {
         width: 100%;
+    }
+    .services-subheading {
+        text-align: center !important;
+        letter-spacing: 0;
     }
     .gallery-container {
         --containerWidth: 100vw;        
@@ -415,6 +428,7 @@ footer {
     .card-container {        
         flex-direction: column;       
     }
+
   }  
   /* @media (min-width: 766px) {
     .hero-container {
