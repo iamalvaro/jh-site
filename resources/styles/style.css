@@ -128,11 +128,6 @@ main h1 + button {
 main h1 + button:hover {
     color: var(--grey);
 }
-/* main h1 + button:hover {
-    color: var(--accentColour);
-    background-color: var(--brokenWhite);
-    border: solid 2px var(--accentColour);
-} */
 .hero-img {
     width: 20rem;
     height: 31rem;
@@ -160,7 +155,7 @@ main h1 + button:hover {
 
 /* -------------IMAGE COMPARE------------- */
 .hero-img {
-    margin: 0;
+    margin: 1rem 1rem 0;
     
 }
 .img-comp-container {
@@ -199,19 +194,6 @@ main h1 + button:hover {
    opacity: 0.7;
    border-radius: 50%;
    }     
-   /* .worker-container {
-    background-color: var(--accentColour);
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    z-index: 4;
-    position: absolute;
-    bottom: -2rem;
-    left: -3rem;
-    background-image: url(/resources/images/house.png);
-    background-size: 6rem;
-    object-fit: cover;
-   } */
    .worker-img {
     width: 8rem;
     position: absolute;
@@ -223,16 +205,11 @@ main h1 + button:hover {
     margin: 1rem 0;
     text-align: center;
     color: var(--grey);
-
-    /* text-shadow: 2px 2px var(--grey); */
-    /* position: absolute;
-    bottom: 1rem;
-    left: 1rem; */
    }
 /* ------------CARDS------------- */
 #services {
     margin: 3em auto; 
-    padding: 2rem 0 2rem 0;  
+    padding: 2rem 0 3rem 0;  
     /* width: 85vw; */
     background-color: var(--accentColour);
     /* height: 90vh; */
@@ -246,11 +223,11 @@ main h1 + button:hover {
 .services-subheading {
     display: flex;
     justify-content: center;
-    margin: 0 0 2rem 0;
-    color: var(--brokenWhite);
+    margin: 0 0 2rem 0;   
     letter-spacing: 5px;
-
-
+}
+.clear-heading{
+    color: var(--brokenWhite);
 }
 .card-container > * {
     flex: 1;
@@ -276,10 +253,99 @@ main h1 + button:hover {
 }
 /* SLIDE SHOW */
 .container {
-    height: 20rem;
-    background-color: var(--grey);
+    /* height: 20rem; */
+    /* background-color: var(--grey); */
     width: var(--containerWidth);
     margin: 3rem auto;
+}
+.gallery-container {
+    /* width: 70vw;
+    margin: 3rem auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+.gallery-img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 15rem;
+  max-height: 15rem;
+  object-fit: cover; 
+}
+.gallery-img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 .container:last-of-type {
     background-color: var(--accentColour);
