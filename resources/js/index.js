@@ -101,3 +101,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+// COPYRIGHT DYNAMIC YEAR
+const year = new Date().getFullYear();
+
+var copyright = document.getElementById("copyright");
+copyright.innerText = `© ${year} by REHABILITACIONES HIDALGO S.L.`;
