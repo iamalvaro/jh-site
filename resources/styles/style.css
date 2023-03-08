@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+
 
 :root {
    --brokenWhite: #EEEEEE;
@@ -28,21 +32,22 @@ body {
   color:var(--grey);
 }
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
   
   h2 {
-    font-size: 2.5em;
+    font-size: 2.6rem;
   }
   
   h3{
-    font-size: 1.4em;    
+    font-size: 1.4rem;    
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
   }
   i {
     font-size: 1.7rem;
-    margin: 0 0.5rem 0 0;
-    /* color: var(--accentColour); */
-    /* margin: 0 0 0.8rem 0; */
+    margin: 0 0.5rem 0 0;   
   }
   p {
     font-size:1.2rem;
@@ -227,8 +232,8 @@ main h1 + button:hover {
 .services-subheading {
     display: flex;
     justify-content: center;
-    margin: 0 0 2rem 0;   
-    letter-spacing: 5px;
+    margin: 0 0 3rem 0;   
+    letter-spacing: 4px;
    
 }
 .clear-heading{
@@ -498,6 +503,12 @@ footer {
     }
     .card-container {        
         flex-direction: column;       
+    }
+    /* ------ GALLERY SMALLER ICONS --------- */
+    .gallery-img {
+        max-width: 13rem;
+        max-height: 13rem;
+        gap: 0;
     }
 
   }  
