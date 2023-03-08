@@ -123,42 +123,60 @@ main h1 + button {
 main h1 + button:hover {
     color: var(--grey);
 }
-.hero-img {
-    width: 20rem;
-    height: 31rem;
-}
-.hero-subcontainer {
-    display:flex;
-    margin: 1.5rem 0 0;
-    justify-content: space-evenly;
-    width: 70%;
-    
-}
 .hero-sub{
-    /* flex-basis: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 0;
+    width: 90%;
 }
 .hero-sub h3 {
     margin: 0 0 1rem 0;
     display: inline;
-}
-.hero-sub p  {
-    margin: 1rem 0 0 0;
-}
-.hero-sub:first-of-type {
-    /* background-color: red; */
+    
 }
 .main-img {
-    width: 40rem;
-    position: absolute;
-    margin: -2rem 0 0 -10rem;
+    width: 45rem;
 }
 
 /* -------------IMAGE COMPARE------------- */
-.hero-img {
-    margin: 1rem 1rem 0;
-    
+#img-compare {
+    margin: 8rem auto 5rem;
+    display: flex;
+    width: var(--containerWidth);   
 }
-.img-comp-container {
+.second-hero {
+    /* margin: 0; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+}
+.worker-container {
+    display: flex;    
+    align-items: center;   
+    margin: 0 0 2rem;
+    width: 90%;    
+    background: var(--accentColour);
+    color: var(--brokenWhite);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.tag-img {
+    width: 100%;
+    margin: 0 0 3rem;
+    text-align: right;   
+    color: var(--accentColour); 
+   }
+.worker-img {
+    width: 6rem;
+    float: right;
+}
+
+.worker-container > p {
+    width: 60%;
+}
+
+.img-comp-container {   
    position: relative;
    height: 28rem; /*should be the same height as the images*/
    width: 30vw;
@@ -192,19 +210,8 @@ main h1 + button:hover {
    background-color: var(--accentColour);
    opacity: 0.7;
    border-radius: 50%;
-   }     
-   .worker-img {
-    width: 8rem;
-    position: absolute;
-    bottom: -2rem;
-    left: -3rem;
-   }
-   .tag-img {
-    width: 30vw;
-    margin: 1rem 0;
-    text-align: center;
-    color: var(--grey);
-   }
+   } 
+
 /* ------------CARDS------------- */
 #services {
     margin: 3em auto; 
@@ -222,9 +229,11 @@ main h1 + button:hover {
     justify-content: center;
     margin: 0 0 2rem 0;   
     letter-spacing: 5px;
+   
 }
 .clear-heading{
     color: var(--brokenWhite);
+   
 }
 .card-container > * {
     flex: 1;
@@ -343,6 +352,35 @@ main h1 + button:hover {
     background-color: var(--accentColour);
 }
 
+/* --------STEPS---------- */
+#steps {
+    padding: 2rem 0 3rem 0;    
+    background-color: var(--accentColour); 
+}
+.card-step {
+    display: flex;
+    flex-direction: column;
+    color: var(--brokenWhite);
+    text-align: center;
+    gap: 2rem;
+}
+.card-step > * {  
+    font-weight: 300;
+}
+.fa-circle-1 {
+    font-size: 4rem;
+    color: var(--brokenWhite);
+}
+.card-step > img {
+    width: 6rem;
+    align-self: center;
+    margin: 0 auto;    
+}
+.bold-word {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
 /* FOOTER */
 footer {
     height: 14rem;
@@ -388,6 +426,21 @@ footer {
     font-weight: 200;
     font-size: 1rem;
 }
+@media (max-width: 1214px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-container {
+        width: 100%;
+    }
+    .hero-img {      
+        margin: 0 0 0 -2rem;        
+    }   
+    .main-img {
+        width: 70vw;       
+    }
+}
 
 @media (max-width: 766px) {
     :root {
@@ -405,10 +458,7 @@ footer {
     main h1 {
         width: 100%;
     }
-    .main-img {
-        width: 25rem;
-        margin: 1rem 0 0 -5rem;
-    }
+   
     .hero-container {
         width: 100%;
     }
@@ -418,6 +468,20 @@ footer {
     }
     .gallery-container {
         --containerWidth: 100vw;        
+    }
+    #img-compare {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-hero {
+        width: 80vw;
+    }
+    .tag-img {
+        text-align: center;
+        order: 2;
+    }
+    .worker-container {
+        width: 100%;
     }
     .img-comp-container {
         width: 80vw;
