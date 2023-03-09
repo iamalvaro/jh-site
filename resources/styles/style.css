@@ -86,6 +86,7 @@ h1 {
     padding: 0.8rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 0.5s;
 }
 #navbar > button:hover {
     color: var(--brokenWhite);
@@ -124,6 +125,7 @@ main h1 + button {
     font-size: 1.2rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 0.5s;
     }
 main h1 + button:hover {
     color: var(--grey);
@@ -165,11 +167,13 @@ main h1 + button:hover {
     color: var(--brokenWhite);
     border-radius: 0.5rem;
     padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px; 
 }
 .tag-img {
     width: 100%;
     margin: 0 0 3rem;
-    text-align: right;   
+    text-align: right; 
+    font-weight: 500;  
     color: var(--accentColour); 
    }
 .worker-img {
@@ -369,7 +373,10 @@ main h1 + button:hover {
     text-align: center;
     gap: 2rem;
 }
-.card-step > * {  
+.card-step > h3 {
+    font-weight: 500;
+}
+.card-step > p {  
     font-weight: 300;
 }
 .fa-circle-1 {
@@ -386,6 +393,72 @@ main h1 + button:hover {
     font-size: 1.2rem;
 }
 
+ /* ------Call to Action------ */
+ #call-to-action {
+    margin: 3em auto; 
+}
+ .cta-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 3rem 0;
+    width: var(--containerWidth);
+    background-color: #ffc61b;
+    border-radius: 0.5rem; 
+    position: relative;
+ }
+ .cta-heading {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;   
+    letter-spacing: 4px;
+ }
+ .cta-subcontainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+ .cta-subcontainer button {
+    background-color: var(--accentColour);
+    /* border: 2px solid var(--accentColour); */
+    border: none;
+    color: var(--brokenWhite);
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s; 
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    z-index: 20;
+    position: absolute;
+    bottom: 4.5rem;
+    left: 9rem;
+    
+ }
+ .cta-subcontainer button:hover { 
+    color: var(--grey);   
+ }
+ .cta-subheading {
+    font-weight: 500;
+    width: 20rem;
+ }
+ .tel-num {
+    font-size: 2rem;
+    color: var(--brokenWhite)
+ }
+ .cta-whatsapp {
+    background-color: #3AC371;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    align-self: baseline;
+ }
+ .cta-img > img {
+    width: 10rem;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+}
 /* FOOTER */
 footer {
     /* height: 14rem; */
@@ -419,14 +492,17 @@ footer {
     margin: 0 0 1rem;
 }
 .contact-option {    
-    font-weight: 300;
-    font-size: 0.8rem;
+    font-weight: 300;    
     display: flex;
     margin: 0 0 0.5rem;    
     align-items: center;       
 }
+.contact-option > p {
+    font-size: 0.9rem;
+
+}
 .contact-option > i {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .address {
     font-weight: 200;
@@ -507,8 +583,7 @@ footer {
     /* ------ GALLERY SMALLER ICONS --------- */
     .gallery-img {
         max-width: 13rem;
-        max-height: 13rem;
-        gap: 0;
+        max-height: 13rem;        
     }
 
   }  
