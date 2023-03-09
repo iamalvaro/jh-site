@@ -395,7 +395,7 @@ main h1 + button:hover a{
     flex-direction: column;
     color: var(--brokenWhite);
     text-align: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .card-step > h3 {
     font-weight: 500;
@@ -433,7 +433,7 @@ main h1 + button:hover a{
     position: relative;
     background-position-x: 0;
     background-position-y: 110%;
-    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px; 
     background-size: 15rem;
  }
  .cta-heading {
@@ -472,11 +472,14 @@ main h1 + button:hover a{
  }
  .cta-subheading {
     font-weight: 500;
-    width: 20rem;
+    width: 20rem;    
  }
  .tel-num {
+    width: 100%;
     font-size: 2rem;
-    color: var(--brokenWhite)
+    font-weight: 600;
+    color: var(--brokenWhite);
+    text-align: center;
  }
  .cta-whatsapp {
     background-color: #3AC371;
@@ -500,12 +503,11 @@ main h1 + button:hover a{
 
 
 /* FOOTER */
-footer {
-    /* height: 14rem; */
+footer {   
     background-color: var(--grey);
     bottom: 0;
-    padding: 0 0 1rem 0;
-    
+    padding: 0 0 1rem 0; 
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 15px;    
 }
 .contact-footer-container {
     margin: 2rem 0 0;
@@ -519,7 +521,7 @@ footer {
     /* margin: 0.5rem 2rem; */
 }
 .contact-footer {
-    margin: 1.5rem 2rem;    
+    margin: 1.5rem 2rem 0;    
     letter-spacing: 2px;    
     padding-bottom: 0.3rem;
     display: flex;
@@ -568,14 +570,6 @@ footer {
     .main-img {
         width: 70vw;       
     }
-    /* .cta-heading {
-        margin: 0 0 3rem 0;
-    }
-    .cta-subcontainer{
-        flex-direction: column-reverse;
-        gap: 2rem;
-
-    } */
 }
 
 @media (max-width: 766px) {
