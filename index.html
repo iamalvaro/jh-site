@@ -8,6 +8,7 @@
     <meta name="description" content="Fachadas Hidalgo es una empresa de Barcelona especializada en la rehabilitación integral de edificios. Tres decadas de experiencia avalan nuestro trabajo.">
     <link rel="icon" type="image/x-icon" href="/resources/images/helmet-favicon.png">
     <link rel="stylesheet" href="resources/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav id="navbar">
@@ -18,11 +19,29 @@
         <ul class="nav-links">
             <li><a href="/"> Inicio </a></li>
             <li><a href="#services" onclick="() => null;">Servicios</a> </li>
-            <li><a href="#projects" onclick="() => null;">Proyectos</a> </li>
-            <li><a href=""> Quienes Somos</a></li>
+            <li><a href="#projects" onclick="() => null;">Proyectos</a> </li> 
+             <button><a href="#call-to-action">Contacto</a></button>           
         </ul>
-        <button>Contacto</button>
+        <!-- BURGUER MENU -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>       
     </nav>
+    <div id="myLinks2" class="burguer-links">
+        <a href="#news">hello</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
     <main id="hero-section">
         <div class="hero-container">
             <h1>¡Renueva tu vida!</h1>
@@ -139,13 +158,11 @@
                             675 75 27 64
                         </span>
                     </h3>
+                    <div class="whats-img">
+                        <img src="/resources/images/whatsapp.png" alt="whatsapp logo">
+                    </div>
                 </div>
             </div>
-            <div class="cta-img">
-                <img src="/resources/images/workers.png" alt="workers-icon">
-            </div>
-
-
         </div>
     </section>
     <footer>

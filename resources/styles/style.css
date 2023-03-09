@@ -79,7 +79,7 @@ h1 {
 
 
 }
-#navbar > button {
+ul > button {
     background-color: var(--grey);
     border: 2px solid var(--accentColour);
     color: var(--accentColour);
@@ -87,8 +87,9 @@ h1 {
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.5s;
+    text-decoration: none;
 }
-#navbar > button:hover {
+ul > button:hover {
     color: var(--brokenWhite);
     border: 2px solid var(--brokenWhite);
 }
@@ -102,6 +103,21 @@ h1 {
 .nav-links li a {
     text-decoration: none;
     color: var(--brokenWhite);
+}
+button a {
+    color: var(--accentColour);
+    text-decoration: none;
+    transition: 0.5s;
+}
+button a:hover {
+    color: var(--brokenWhite);   
+}
+#navbar > button:hover {
+    color: var(--brokenWhite);
+    border: 2px solid var(--brokenWhite);
+}
+.topnav {
+    display: none;
 }
 /* -----------------MAIN----------- */
 main {
@@ -402,21 +418,29 @@ main h1 + button:hover {
     flex-direction: column;
     padding: 2rem 0 3rem 0;
     width: var(--containerWidth);
+    background-image: url(/resources/images/workers.png);
+    background-repeat: no-repeat;
     background-color: #ffc61b;
     border-radius: 0.5rem; 
     position: relative;
+    background-position-x: 0;
+    background-position-y: 110%;
+    
+    background-size: 15rem;
  }
  .cta-heading {
     display: flex;
     justify-content: center;
-    margin: 0 0 1.5rem 0;   
+    margin: 0 0 3rem 0;   
     letter-spacing: 4px;
  }
  .cta-subcontainer {
     display: flex;
+    flex-direction: column-reverse;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     
  }
  .cta-subcontainer button {
@@ -431,10 +455,9 @@ main h1 + button:hover {
     font-size: 1.2rem;
     letter-spacing: 1px;
     z-index: 20;
-    position: absolute;
+    /* position: absolute; */
     bottom: 4.5rem;
-    left: 9rem;
-    
+    left: 9rem;    
  }
  .cta-subcontainer button:hover { 
     color: var(--grey);   
@@ -452,6 +475,7 @@ main h1 + button:hover {
     padding: 1rem;
     border-radius: 0.5rem;
     align-self: baseline;
+    position: relative;
  }
  .cta-img > img {
     width: 10rem;
@@ -459,6 +483,14 @@ main h1 + button:hover {
     bottom: -0.3rem;
     left: 0;
 }
+.whats-img > img {
+    width: 6rem;
+    position:absolute;
+    top: -2rem;
+    right: -3rem;
+}
+
+
 /* FOOTER */
 footer {
     /* height: 14rem; */
@@ -528,6 +560,14 @@ footer {
     .main-img {
         width: 70vw;       
     }
+    /* .cta-heading {
+        margin: 0 0 3rem 0;
+    }
+    .cta-subcontainer{
+        flex-direction: column-reverse;
+        gap: 2rem;
+
+    } */
 }
 
 @media (max-width: 766px) {
@@ -535,10 +575,66 @@ footer {
       --containerWidth: 90vw;
      }
 
-     .nav-links, #navbar > button {
+     .nav-links {
         display: none !important;
      }
+     /* ------BURGUER MENU------- */
+     .topnav {
+        overflow: hidden;
+        background-color: var(--grey);
+        position: relative;
+        display: block;
+        align-self: center;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
 
+      }      
+      /* Style navigation menu links */
+      .topnav a {
+        color: var(--accentColour);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      } 
+      .burguer-links > a {
+        color: var(--accentColour);
+        background-color: var(--grey);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }     
+      .burguer-links{
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+        text-align: center;
+      }
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: var(--grey);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0.2rem;
+      }
+      .icon i {
+        font-size: 2rem;
+      }      
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {        
+        color: var(--brokenWhite);
+      }      
+      /* Style the active link (or home/logo) */
+      .active {
+        /* background-color: var(--grey); */
+        /* color: white; */
+      }
+
+    /* -----MAIN------ */
     main {
         flex-direction: column;
         align-items: center;
@@ -584,6 +680,9 @@ footer {
     .gallery-img {
         max-width: 13rem;
         max-height: 13rem;        
+    }
+    .cta-heading {
+        text-align: center !important;
     }
 
   }  

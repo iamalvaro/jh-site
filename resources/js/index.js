@@ -1,3 +1,15 @@
+// Burguer Menu
+
+function myFunction() {
+  var burguerLinks = document.getElementById("myLinks");
+  if (burguerLinks.style.display === "block") {
+    burguerLinks.style.display = "none";
+  } else {
+    burguerLinks.style.display = "block";
+  }
+}
+
+
 // Image Compare
 
 function initComparisons() {
@@ -107,3 +119,4 @@ const year = new Date().getFullYear();
 
 var copyright = document.getElementById("copyright");
 copyright.innerText = `© ${year} by REHABILITACIONES HIDALGO S.L.`;
+
