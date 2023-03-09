@@ -89,9 +89,12 @@ ul > button {
     transition: 0.5s;
     text-decoration: none;
 }
-ul > button:hover {
+ul > button:hover{
     color: var(--brokenWhite);
     border: 2px solid var(--brokenWhite);
+}
+ul > button:hover a {
+    color: var(--brokenWhite);   
 }
 .nav-links  {    
     list-style-type: none;
@@ -104,14 +107,15 @@ ul > button:hover {
     text-decoration: none;
     color: var(--brokenWhite);
 }
+.nav-links li a:hover{
+    color: var(--accentColour);
+}
 button a {
     color: var(--accentColour);
     text-decoration: none;
     transition: 0.5s;
 }
-button a:hover {
-    color: var(--brokenWhite);   
-}
+
 #navbar > button:hover {
     color: var(--brokenWhite);
     border: 2px solid var(--brokenWhite);
@@ -119,6 +123,10 @@ button a:hover {
 .topnav {
     display: none;
 }
+.burguer-links {
+    display:none;
+}
+
 /* -----------------MAIN----------- */
 main {
     display:flex;
@@ -133,7 +141,7 @@ main  h1 {
     width: 80%;
     margin: 0 0 1rem 0;
 }
-main h1 + button {
+main h1 + button, main h1 + button > a {
     background-color: var(--accentColour);
     color: var(--brokenWhite);
     border: none;
@@ -143,7 +151,7 @@ main h1 + button {
     cursor: pointer;
     transition: 0.5s;
     }
-main h1 + button:hover {
+main h1 + button:hover a{
     color: var(--grey);
 }
 .hero-sub{
@@ -443,7 +451,7 @@ main h1 + button:hover {
     gap: 2rem;
     
  }
- .cta-subcontainer button {
+ .cta-subcontainer button, .cta-subcontainer button > a {
     background-color: var(--accentColour);
     /* border: 2px solid var(--accentColour); */
     border: none;
@@ -459,7 +467,7 @@ main h1 + button:hover {
     bottom: 4.5rem;
     left: 9rem;    
  }
- .cta-subcontainer button:hover { 
+ .cta-subcontainer button:hover a { 
     color: var(--grey);   
  }
  .cta-subheading {
@@ -585,12 +593,10 @@ footer {
         position: relative;
         display: block;
         align-self: center;
-      }
-      
+      }      
       /* Hide the links inside the navigation menu (except for logo/home) */
       .topnav #myLinks {
         display: none;
-
       }      
       /* Style navigation menu links */
       .topnav a {
@@ -601,11 +607,11 @@ footer {
         display: block;
       } 
       .burguer-links > a {
-        color: var(--accentColour);
+        color: var(--brokenWhite);
         background-color: var(--grey);
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 1.2rem;
         display: block;
       }     
       .burguer-links{
@@ -613,6 +619,15 @@ footer {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
         text-align: center;
       }
+      .burguer-links a:hover {        
+        color: var(--accentColour);
+      }
+      .burguer-links > a:last-child {
+        color: var(--accentColour);
+      }
+      .burguer-links > a:last-child:hover {
+        color: var(--brokenWhite);
+      }          
       /* Style the hamburger menu */
       .topnav a.icon {
         background: var(--grey);
@@ -628,12 +643,7 @@ footer {
       .topnav a:hover {        
         color: var(--brokenWhite);
       }      
-      /* Style the active link (or home/logo) */
-      .active {
-        /* background-color: var(--grey); */
-        /* color: white; */
-      }
-
+  
     /* -----MAIN------ */
     main {
         flex-direction: column;
