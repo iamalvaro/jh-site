@@ -12,9 +12,8 @@ function burguerFunction() {
 window.addEventListener("resize", function() {
   if (window.matchMedia("(min-width: 766px)").matches) {
     burguerLinks.style.display = "none";
-  } else {
-    console.log("Screen less than 500px")
-  }
+  } 
+  
 })
 
 // Image Compare
@@ -104,7 +103,7 @@ var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.querySelectorAll(".gallery-img");
-console.log(img);
+
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.forEach(e => e.onclick = function(){
@@ -123,7 +122,7 @@ span.onclick = function() {
 
 // COPYRIGHT DYNAMIC YEAR
 const year = new Date().getFullYear();
-
 var copyright = document.getElementById("copyright");
+var copyrightContact = document.getElementById("copyright-contact");
 copyright.innerText = `© ${year} by REHABILITACIONES HIDALGO S.L.`;
-
+copyrightContact.innerText = `© ${year} by REHABILITACIONES HIDALGO S.L.`; 

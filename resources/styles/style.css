@@ -76,9 +76,8 @@ h1 {
     margin: -0.5rem 0;
     letter-spacing: 9.2px;
     user-select: none;
-
-
 }
+
 ul > button {
     background-color: var(--grey);
     border: 2px solid var(--accentColour);
@@ -501,6 +500,72 @@ main h1 + button:hover a{
     right: -3rem;
 }
 
+/* -----CONTACT US------  */
+#contact-main {
+    display: flex;
+    flex-direction: column;
+}
+.contact-container {
+    width: var(--containerWidth);
+    min-height: 30vh;
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;  
+    padding: 1rem;
+    border-radius: 0.5rem; */
+}
+.form-container > form {
+    display: flex;
+    flex-direction: column;
+    border-right: solid var(--accentColour);
+    padding: 0 6rem 0 0;
+}
+.form-container > form > input {
+    width: 100%;
+}
+.form-container > form > input, textarea {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0 0.3rem 0.5rem;
+}
+.form-label {   
+    margin: 0.5rem 0 0 0.5rem;
+    font-size: 0.9rem;
+}
+form > textarea { 
+    font-family: "Roboto", sans-serif;
+}
+textarea:focus, input:focus {
+    outline: 2px solid var(--accentColour);
+    color: var(--grey);
+}
+form > button {
+    margin: 1rem 0 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--accentColour);
+    color: var(--brokenWhite);
+    cursor: pointer;
+    transition: 0.5s;
+}
+form > button:hover {
+    color: var(--grey);
+}
+.dark-logo > p:first-of-type {
+    color: var(--grey);
+    font-family: "Gajraj One", sans-serif;  
+    font-size: 1.8rem;
+    user-select: none;
+}
+.dark-logo > p:last-of-type {
+    color: var(--grey);
+    font-family: 'Gruppo', sans-serif;
+    font-size: 1.2rem;
+    margin: -0.5rem 0;
+    letter-spacing: 9.2px;
+    user-select: none;
+}
+
 
 /* FOOTER */
 footer {   
@@ -518,7 +583,7 @@ footer {
     color: var(--accentColour);    
 }
 .footer-logo {
-    /* margin: 0.5rem 2rem; */
+    margin: 0.5rem auto;
 }
 .contact-footer {
     margin: 1.5rem 2rem 0;    
