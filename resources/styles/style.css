@@ -508,16 +508,15 @@ main h1 + button:hover a{
 .contact-container {
     width: var(--containerWidth);
     min-height: 30vh;
-    display: flex;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;  
+    display: flex;    
     padding: 1rem;
-    border-radius: 0.5rem; */
+    border-radius: 0.5rem;
 }
 .form-container > form {
     display: flex;
     flex-direction: column;
-    border-right: solid var(--accentColour);
-    padding: 0 6rem 0 0;
+    /* border-right: solid var(--accentColour); */
+    padding: 0 2rem 0 0;
 }
 .form-container > form > input {
     width: 100%;
@@ -551,6 +550,9 @@ form > button {
 form > button:hover {
     color: var(--grey);
 }
+.dark-logo {
+    padding: 1rem 0 0;
+}
 .dark-logo > p:first-of-type {
     color: var(--grey);
     font-family: "Gajraj One", sans-serif;  
@@ -561,11 +563,30 @@ form > button:hover {
     color: var(--grey);
     font-family: 'Gruppo', sans-serif;
     font-size: 1.2rem;
-    margin: -0.5rem 0;
+    margin: -0.5rem 0 1.5rem;
     letter-spacing: 9.2px;
     user-select: none;
 }
-
+.contact-details {
+    display: flex;
+    align-items: center;
+    /* text-align: left; */
+    margin: 0 0 1rem;
+    /* justify-content: flex-start; */
+    /* width: 10rem; */
+    font-weight: 400;
+   
+}
+.contact-details > p {
+    width: 100%;
+}
+.contact-details > i {
+    font-size: 1.3rem;
+}
+.other-details {
+    margin: 1.5rem 0 0rem;
+    font-weight: 300;
+}
 
 /* FOOTER */
 footer {   
@@ -577,9 +598,7 @@ footer {
 .contact-footer-container {
     margin: 2rem 0 0;
     display: flex;
-    flex-direction: column;
-    /* align-items: flex-start;
-    align-content: center; */
+    flex-direction: column; 
     color: var(--accentColour);    
 }
 .footer-logo {
@@ -753,6 +772,21 @@ footer {
     .cta-heading {
         text-align: center !important;
     }
+
+    /* ------CONTACT US------ */
+
+    .contact-container {
+        flex-direction: column;
+       
+    }
+    .form-container > input, textarea {
+        width: 60vw;
+    }
+    .dark-logo {
+        margin: 1rem 0 0;
+    }
+ 
+ 
 
   }  
   /* @media (min-width: 766px) {
