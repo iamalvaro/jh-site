@@ -488,12 +488,12 @@ main h1 + button:hover a{
     align-self: baseline;
     position: relative;
  }
- .cta-img > img {
+ /* .cta-img > img {
     width: 10rem;
     position: absolute;
     bottom: -0.3rem;
     left: 0;
-}
+} */
 .whats-img > img {
     width: 6rem;
     position:absolute;
@@ -777,6 +777,21 @@ footer {
     }
     .cta-heading {
         text-align: center !important;
+    }
+    /* --------CTA------------ */
+    .cta-subheading {
+        width: 80%;
+        margin: 2rem 0 0;       
+    }
+    .tel-num {
+        font-size: 1.5rem;
+        text-align: right;        
+    }
+    .whats-img > img {
+        width: 4rem;
+        top: -2rem;
+        right: 40%;
+     
     }
 
     /* ------CONTACT US------ */
