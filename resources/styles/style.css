@@ -570,13 +570,9 @@ form > button:hover {
 }
 .contact-details {
     display: flex;
-    align-items: center;
-    /* text-align: left; */
-    margin: 0 0 1rem;
-    /* justify-content: flex-start; */
-    /* width: 10rem; */
-    font-weight: 400;
-   
+    align-items: center;    
+    margin: 0 0 1rem;   
+    font-weight: 400;   
 }
 .contact-details > p {
     width: 100%;
@@ -587,6 +583,31 @@ form > button:hover {
 .other-details {
     margin: 1.5rem 0 0rem;
     font-weight: 300;
+}
+
+/* ABOUT */
+.about-header {
+    height: 9rem;    
+    display: flex; 
+    justify-content: center;   
+    padding: 2.5rem;
+    
+}
+#about {
+    background-color: var(--grey);
+    height: 100vh;
+    padding: 3rem 0;
+}
+.about-container {
+    width: var(--containerWidth);
+    background-color: var(--brokenWhite);
+    height: 100vh;    
+}
+.about-links-container > a {
+    display: block;
+    color: var(--accentColour);
+    margin: 0.5rem 0;
+
 }
 
 /* FOOTER */
