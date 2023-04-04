@@ -572,7 +572,7 @@ form > button:hover {
     display: flex;
     align-items: center;    
     margin: 0 0 1rem;   
-    font-weight: 400;   
+    font-weight: 300;   
 }
 .contact-details > p {
     width: 100%;
