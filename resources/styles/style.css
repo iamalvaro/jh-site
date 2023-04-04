@@ -581,8 +581,16 @@ form > button:hover {
     font-size: 1.3rem;
 }
 .other-details {
-    margin: 1.5rem 0 0rem;
+    margin: 1rem 0 0rem;
     font-weight: 300;
+}
+.about-link {
+    margin: 1rem 0;
+    /* text-align: center; */
+    width: 100%;
+}
+.about-link a{    
+    color: var(--accentColour);
 }
 
 /* ABOUT */
