@@ -595,20 +595,51 @@ form > button:hover {
 }
 #about {
     background-color: var(--grey);
-    height: 100vh;
+    color: var(--brokenWhite);
     padding: 3rem 0;
 }
+#about a {
+    font-size: 1.2rem;
+}
 .about-container {
-    width: var(--containerWidth);
-    background-color: var(--brokenWhite);
-    height: 100vh;    
+    width: 40vw;
+    margin: 3rem auto 0;
+    /* background-color: var(--brokenWhite); */
+    height: 80vh;    
+}
+.about-container > p > a {
+    color: var(--accentColour);
+    font-size: 1rem;
+}
+.about-links-container {
+    margin: 3rem auto;
+}
+.about-container > p:first-of-type  {
+    margin: 2rem 0;
+}
+.about-links-container > a:first-of-type {
+    margin: 0 0 2rem;
+}
+.about-links-container > p > a {
+    color: var(--accentColour);
 }
 .about-links-container > a {
     display: block;
     color: var(--accentColour);
     margin: 0.5rem 0;
-
 }
+.fontawesome-link {
+    margin: 2rem 0;
+}
+.about-container ul {
+    
+    list-style-type: none;
+}
+.about-container ul > li, li a {
+    color: var(--accentColour);
+    margin: 0.5rem 0;
+}
+
 
 /* FOOTER */
 footer {   
