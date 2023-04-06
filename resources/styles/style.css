@@ -505,6 +505,7 @@ main h1 + button:hover a{
 #contact-main {
     display: flex;
     flex-direction: column;
+    height: 65vh;
 }
 .contact-container {
     width: var(--containerWidth);
@@ -512,12 +513,12 @@ main h1 + button:hover a{
     display: flex;    
     padding: 1rem;
     border-radius: 0.5rem;
+    gap: 1rem;
 }
 .form-container > form {
     display: flex;
-    flex-direction: column;
-    /* border-right: solid var(--accentColour); */
-    padding: 0 2rem 0 0;
+    flex-direction: column;    
+    /* padding: 0 2rem 0 0; */
 }
 .form-container > form > input {
     width: 100%;
