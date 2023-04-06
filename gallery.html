@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fachadas Hidalgo | Galeria</title>
+    <link rel="icon" type="image/x-icon" href="/resources/images/helmet-favicon.png">
+    <link rel="stylesheet" href="resources/styles/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">            
+            <p>Fachadas Hidalgo</p>
+            <p>Rehabilitaciones</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/"> Inicio </a></li>
+            <li><a href="/#services" onclick="() => null;">Servicios</a> </li>
+            <li><a href="/#projects" onclick="() => null;">Proyectos</a> </li> 
+             <!-- <button><a href="/#call-to-action">Contacto</a></button>            -->
+        </ul>
+        <!-- BURGUER MENU -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>     
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="burguerFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>       
+    </nav>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks" class="burguer-links">
+        <a href="/">Inicio</a>
+        <a href="/#services">Servicios</a>
+        <a href="/#projects">Proyectos</a>
+        <!-- <a href="/#call-to-action">Contacto</a> -->
+    </div>
+    <footer>
+        <div class="contact-footer-container">
+            <div class="nav-logo footer-logo">            
+                <p>Fachadas Hidalgo</p>
+                <p>Rehabilitaciones</p>
+            </div>
+            <div class="contact-footer">
+                <h4>CONTACTA CON NOSOTROS</h4>
+                <div class="contact-option">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>675 75 27 64</p>
+                </div>
+                <div class="contact-option">
+                    <i class="fa-regular fa-at"></i>
+                    <p>josemhidalgo68@gmail.com</p>
+                </div>
+                <p class="address">CORNELLA DE LLOBREGAT 08940 (BARCELONA)</p>                
+            </div>
+            <p id="copyright"></p>
+        </div>
+    </footer>
+    <script src="/resources/js/gallery.js"></script>
+    <script src="https://kit.fontawesome.com/be584229e6.js" crossorigin="anonymous"></script>
+</body>
+</html>

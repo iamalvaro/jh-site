@@ -97,7 +97,7 @@ function initComparisons() {
 
   initComparisons();
 
-// GALLERY-MODEL LOGIC
+// GALLERY-MODAL LOGIC
   // Get the modal
 var modal = document.getElementById("myModal");
 
