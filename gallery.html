@@ -18,7 +18,7 @@
             <li><a href="/"> Inicio </a></li>
             <li><a href="/#services" onclick="() => null;">Servicios</a> </li>
             <li><a href="/#projects" onclick="() => null;">Proyectos</a> </li> 
-             <!-- <button><a href="/#call-to-action">Contacto</a></button>            -->
+             <button><a href="/#call-to-action">Contacto</a></button>           
         </ul>
         <!-- BURGUER MENU -->
         <div class="topnav">
@@ -34,10 +34,34 @@
         <a href="/">Inicio</a>
         <a href="/#services">Servicios</a>
         <a href="/#projects">Proyectos</a>
-        <!-- <a href="/#call-to-action">Contacto</a> -->
+        <a href="/#call-to-action">Contacto</a>
     </div>
+    <section id="gallery">
+        <div class="gallery-tabs">
+            <button class="tablink" onclick="openPage('Home', this, 'var(--brokenWhite)', 'var(--grey)')">Reformas</button>
+            <button class="tablink" onclick="openPage('News', this, 'var(--brokenWhite)', 'var(--grey)')" id="defaultOpen">Fachadas</button>
+            <button class="tablink" onclick="openPage('Contact', this, 'var(--brokenWhite)', 'var(--grey)')">Pintura</button>
+            <button class="tablink" onclick="openPage('About', this, 'var(--brokenWhite)', 'var(--grey)')">Otros</button>
+        </div>
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+        </div>
+        <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p> 
+        </div>
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>        
+    </section>
     <footer>
-        <div class="contact-footer-container">
+        <div class="gallery-footer-container">
             <div class="nav-logo footer-logo">            
                 <p>Fachadas Hidalgo</p>
                 <p>Rehabilitaciones</p>

@@ -501,6 +501,46 @@ main h1 + button:hover a{
     right: -3rem;
 }
 
+/* ------GALLERY---------- */
+#gallery {
+    height: 85vh;
+    width: 100%;
+    /* display:flex; */
+}
+/* .gallery-tabs {
+    background-color: red;
+} */
+/* Style tab links */
+.tablink {
+    background-color: var(--grey);
+    color: var(--brokenWhite);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* border-radius: 0.5rem 0.5rem 0 0; */
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  .tablink:focus {
+    /* color: var(--grey); */
+  }
+  
+  .tablink:hover {
+    background-color: var(--accentColour);
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: var(--grey);
+    background-color: var(--brokenWhite);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }  
+
+
 /* -----CONTACT US------  */
 #contact-main {
     display: flex;
@@ -662,6 +702,11 @@ footer {
     display: flex;
     flex-direction: column; 
     color: var(--accentColour);    
+}
+.gallery-footer-container {
+    display: flex;
+    flex-direction: column; 
+    color: var(--accentColour);
 }
 .footer-logo {
     margin: 0.5rem auto;
@@ -839,6 +884,16 @@ footer {
     .cta-heading {
         text-align: center !important;
     }
+    .gallery-tabs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .gallery-tabs > button {
+        width: 100%;
+    }
+
+
     /* --------CTA------------ */
     .cta-subheading {
         width: 80%;
