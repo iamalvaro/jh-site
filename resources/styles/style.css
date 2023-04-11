@@ -503,13 +503,17 @@ main h1 + button:hover a{
 
 /* ------GALLERY---------- */
 #gallery {
-    height: 85vh;
+    height: 100%;
     width: 100%;
     /* display:flex; */
+}
+.gallery-tabs {
+    display: flex;
 }
 .gallery-tabs > button {
     font-size: 1.2rem;
     font-weight: 500;
+    flex: 1;
 }
 /* Style tab links */
 .tablink {
@@ -518,15 +522,14 @@ main h1 + button:hover a{
     float: left;
     border: none;
     outline: none;
-    cursor: pointer;
-    /* border-radius: 0.5rem 0.5rem 0 0; */
+    cursor: pointer;    
     padding: 14px 16px;
     font-size: 17px;
     width: 25%;
   }
-  .tablink:focus {
-    /* color: var(--grey); */
-  }
+  /* .tablink:focus {
+    color: var(--grey);
+  } */
   
   .tablink:hover {
     background-color: var(--accentColour);
@@ -537,7 +540,7 @@ main h1 + button:hover a{
     color: var(--grey);
     background-color: var(--brokenWhite);
     display: none;
-    padding: 100px 20px;
+    padding: 3rem 3rem;
     height: 100%;
   }  
 
