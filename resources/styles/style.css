@@ -507,9 +507,10 @@ main h1 + button:hover a{
     width: 100%;
     /* display:flex; */
 }
-/* .gallery-tabs {
-    background-color: red;
-} */
+.gallery-tabs > button {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 /* Style tab links */
 .tablink {
     background-color: var(--grey);
@@ -545,7 +546,7 @@ main h1 + button:hover a{
 #contact-main {
     display: flex;
     flex-direction: column;
-    height: 65vh;
+    height: 60%;
 }
 .contact-container {
     width: var(--containerWidth);
@@ -654,7 +655,7 @@ form > button:hover {
     width: 40vw;
     margin: 3rem auto 0;
     /* background-color: var(--brokenWhite); */
-    height: 80vh;    
+    height: 100%;    
 }
 .about-container > p > a {
     color: var(--accentColour);
