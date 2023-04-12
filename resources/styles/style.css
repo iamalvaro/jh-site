@@ -300,7 +300,8 @@ main h1 + button:hover a{
 .slideshow-container img {
     max-width: 35rem;
     max-height: 35rem;
-    object-fit: cover; 
+    object-fit: cover;
+    cursor: pointer; 
 }
   /* Hide the images by default */
   .mySlides {
