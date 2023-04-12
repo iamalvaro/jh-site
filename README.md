@@ -26,7 +26,7 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 <br />
 <div align="center">
   <img src="./resources/readMe/wu.png" alt="Logo" width="80" height="80">
-  <h3 align="center">Circle Landing Agency Website</h3>
+  <h3 align="center">Fachadas Hidalgo Sitio Web</h3>
   <a href="https://midterm-ironhack-ten.vercel.app/">Visit Website</a>
 </div>
 
@@ -64,40 +64,43 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-          <h2>Circle Enterprises</h2>
+          <h2>Fachadas Hidalgo</h2>
 
-Pagina de empresa ficticia para poner en practica conocimientos de HTML, CSS y Javascript en su forma nativa
-bibliotecas ni frameworks.
+Sitio web para empresa dedidaca a la rehabilitacion integral de eficios. Desarrollado con HTML, CSS y Javascript en su forma nativa, sin bibliotecas ni frameworks.
 
-La sección "sobre el proyecto" en un archivo README es una sección importante que proporciona información general sobre el objetivo y la funcionalidad del proyecto.
+El proyecto consta de un landing page para mejorar la presencia web de la empresa y que sus posibles futuros clientes tenga una referencia visual de antiguos trabajos realizados por la empresa.
 
-En esta sección se puede incluir información como:
+Website created for a contracting company that specialises in the wholesale rehabilitation and renovation of buildings. It was developed using HTML, CSS and Javascript in its native forms, without the use of any frameworks.
 
-- Una descripción breve del proyecto y su propósito
-- Tecnologías utilizadas
-- Funcionalidades principales
-- Instrucciones de instalación y configuración
-- Enlaces a documentación adicional o recursos relacionados con el proyecto
-- Licencia del proyecto
-- Contribuciones de las personas en el proyecto.
-
-En resumen, la sección "sobre el proyecto" es una excelente manera de brindar a los usuarios y contribuidores una visión general del proyecto y proporcionarles toda la información necesaria para comenzar a trabajar con él.
+The project involves a landing page to increase the company's internet presence and for future clients to find a visual reference of their previous jobs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Construido Con
 
-La sección "construido con" en un archivo README es una sección que proporciona información sobre las tecnologías y herramientas utilizadas para desarrollar el proyecto.
+Los lenguages utlizados para este proyecto son:
 
-En esta sección se puede incluir información como:
+- HTML
+- CSS
+- JavaScript
 
-- Lenguajes de programación utilizados
-- Frameworks y bibliotecas utilizadas
-- Herramientas de desarrollo (IDE, control de versiones, etc)
-- Servicios en la nube utilizados (si corresponde)
-- Otros recursos o tecnologías relacionadas con el proyecto.
+Todos los lenguages fueron utlizados en su version nativa. Sin uso alguno de bibliotecas o frameworks.
 
-En resumen, la sección "construido con" es una excelente manera de brindar a los usuarios y contribuidores una compresión de las tecnologías y herramientas utilizadas para desarrollar el proyecto, esto ayuda a entender mejor el proyecto y a los desarrolladores a contribuir de manera efectiva.
+El editor de texto utilizado fue Visual Studio Code. Otras herrimientas utilizadas fueron, el emulador de terminal unix Hyper, para la gestion de directorios locales y repositorios en red. Git y Github para el control de veriones y el repositorio online.
+
+Vercel se utilizo para el alojar el trabajo en red desde el inicio del proyecto y de esta manera brindar al cliente la posibilidad de seguir el desarrollo de la web dia a dia.
+
+The languages used for this project are:
+
+- HTML
+- CSS
+- JavaScript
+
+All languages were used in their native version. Without the use of any libraries or frameworks.
+
+The IDE used is Visual Studio Code. Other used tools are, the unix terminal emulator Hyper, for the management of both local and online repositories. Git and Github to manage version control both locally and online.
+
+Vercel was used to host the site since its beginning, giving the client a chance to follow along the development of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,43 +115,46 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 #### Day One
 
 ###### Lunes 23, Enero 2023
-- [X] Crear Navbar
-- [X] Crear Hero
-- [X] Crear carrousel de logos --version cutre de momento
-- [X] Pulir algo styles
-- [X] Crear section projects en html
 
+- [x] Crear Navbar
+- [x] Crear Hero
+- [x] Crear carrousel de logos --version cutre de momento
+- [x] Pulir algo styles
+- [x] Crear section projects en html
 
 #### Day Two
 
 ###### Martes 24, Enero 2023
-- [X] Acabar Home page con estilos
-- [X] Project page html & css
-- [X] Contact form html & css 
-- [X] Empezar scroller 
-- [X] Navbar links
+
+- [x] Acabar Home page con estilos
+- [x] Project page html & css
+- [x] Contact form html & css
+- [x] Empezar scroller
+- [x] Navbar links
 
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
 
-- [X] Hamburguesa menu
-- [X] Esconder scroller cuando no me hace falta
-- [X] About section
-- [X] api content
+- [x] Hamburguesa menu
+- [x] Esconder scroller cuando no me hace falta
+- [x] About section
+- [x] api content
 
 #### Day Four
 
 ###### Jueves 26, Enero 2023
-- [X] About acabar animaciones
-- [X] About json content
-- [X] Efecto skew
+
+- [x] About acabar animaciones
+- [x] About json content
+- [x] Efecto skew
 - [ ] Splash animation
-- [X] Logos slide
+- [x] Logos slide
 
 #### Day Five
 
 ###### Viernes 27, Enero 2023
+
 - [ ] Acabar readme
 - [ ] Finish presentation
 - [ ] Toques finales
@@ -175,7 +181,6 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 Presentation Link: [Insert here your presentation link](insert-link-here)
-
 
 Alvaro Fernandez - [LinkedIn]
 
