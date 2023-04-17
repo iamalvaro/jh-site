@@ -1013,7 +1013,7 @@ footer {
     display: block;
 }
 /* HIDE GALLERY ON SMALL SCREEN */
-.gallery-container {
+.home-gallery {
     display: none;
 }
 
