@@ -296,7 +296,11 @@ main h1 + button:hover a{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    display:none;
   }  
+.slide-dots {
+    display:none;
+}
 .slideshow-container img {
     max-width: 35rem;
     max-height: 35rem;
@@ -1004,7 +1008,14 @@ footer {
     .gallery-tabs > button {
         width: 100%;
     }
-
+/* SHOW SLIDE SHOW ON SMALL SCREEN */
+.slideshow-container, .slide-dots {
+    display: block;
+}
+/* HIDE GALLERY ON SMALL SCREEN */
+.gallery-container {
+    display: none;
+}
 
     /* --------CTA------------ */
     .cta-subheading {

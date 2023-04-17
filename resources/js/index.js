@@ -133,7 +133,7 @@ function showSlides(n) {
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.querySelectorAll(".slide-img");
+var img = document.querySelectorAll(".modal-img");
 
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
