@@ -59,8 +59,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    height: 6rem;    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.5rem;
 }
 
 .nav-logo > p:first-of-type {
@@ -74,9 +74,23 @@ h1 {
     font-family: 'Gruppo', sans-serif;
     font-size: 1.2rem;
     margin: -0.5rem 0;
-    letter-spacing: 9.2px;
+    letter-spacing: 12.55px;
     user-select: none;
 }
+
+@media (max-width: 600px) {
+    #navbar {
+        height: 6rem;
+        padding-inline: 0.5rem;
+    }
+    .nav-logo > p:first-of-type { 
+        font-size: 1.3rem;
+    }
+    .nav-logo > p:last-of-type { 
+        font-size: 0.8rem;
+        letter-spacing: 9.6px;
+    }
+ }
 
 ul > button {
     background-color: var(--grey);
@@ -406,6 +420,11 @@ main h1 + button:hover a{
 .slide-container {
     display: flex;
     flex-direction: column;  
+}
+@media (max-width: 600px) {
+    .container.slide-container {
+        width: unset;
+    }
 }
 .gallery-container {
     display: flex;
@@ -902,7 +921,7 @@ footer {
       /* Style navigation menu links */
       .topnav a {
         color: var(--accentColour);
-        padding: 14px 16px;
+        /* padding: 0.2rem; */
         text-decoration: none;
         font-size: 17px;
         display: block;
@@ -933,9 +952,9 @@ footer {
       .topnav a.icon {
         background: var(--grey);
         display: block;
-        position: absolute;
-        right: 0;
-        top: 0.2rem;
+        /* position: absolute; */
+        /* right: 0;
+        top: 0.2rem; */
       }
       .icon i {
         font-size: 2rem;

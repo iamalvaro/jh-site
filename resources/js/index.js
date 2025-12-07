@@ -155,5 +155,5 @@ span.onclick = function() {
 const year = new Date().getFullYear();
 var copyright = document.getElementById("copyright");
 
-copyright.innerText = `© ${year} by REHABILITACIONES HIDALGO S.L.`;
+copyright.innerText = `© ${year}`;
 
